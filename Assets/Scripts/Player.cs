@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 2;
+    public GameObject shot;
 
     Vector2 input;
 
@@ -21,5 +22,15 @@ public class Player : MonoBehaviour
         input.y = Input.GetAxis("Vertical");
 
         transform.Translate(input * speed * Time.deltaTime);
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            OnFire();
+        }
+    }
+
+    void OnFire()
+    {
+        Instantiate(shot, transform.position, Quaternion.identity);
     }
 }
