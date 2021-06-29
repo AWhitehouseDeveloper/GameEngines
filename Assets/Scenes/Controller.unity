@@ -556,6 +556,7 @@ GameObject:
   - component: {fileID: 1277185274}
   - component: {fileID: 1277185273}
   - component: {fileID: 1277185275}
+  - component: {fileID: 1277185276}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -642,3 +643,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   shot: {fileID: 6397309967948710000, guid: 3ebdb6ffd18590a4b96b9077892d9691, type: 3}
+--- !u!114 &1277185276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277185272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: fa7e189e77fced243aaf74d38852a77a, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2bf3ea2b-99b0-410c-885b-50ec69308a1c
+    m_ActionName: Player/Fire[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45816a59-6578-4682-ba3a-d5ef9b1007a8
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
