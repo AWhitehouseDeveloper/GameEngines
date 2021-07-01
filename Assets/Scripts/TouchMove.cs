@@ -11,6 +11,7 @@ public class TouchMove : MonoBehaviour
     
     private void OnDisable()
     {
+        if (TouchManager.Instance == null) return;
         TouchManager.Instance.touchUpdateEvent -= Move;
     }
 
